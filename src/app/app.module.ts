@@ -34,7 +34,10 @@ import { MatSortModule } from '@angular/material/sort';
 import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
-import { DragDropModule } from '@angular/cdk/drag-drop'
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component'
 
 
 @NgModule({
@@ -45,7 +48,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
     AddressFormComponent,
     TableComponent,
     TreeComponent,
-    DragDropComponent
+    DragDropComponent,
+    NoPageFoundComponent,
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

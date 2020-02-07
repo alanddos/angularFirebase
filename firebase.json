@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/AgilSystem",
+    "public": "dist\\AgilSystem",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -24,7 +24,8 @@
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
-    ]
+    ],
+    "source": "functions"
   },
   "storage": {
     "rules": "storage.rules"
