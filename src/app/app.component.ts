@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 
+
 //firebase
 import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 import 'firebase/firestore';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  
 })
 export class AppComponent {
   title = 'AgilSystem';
@@ -16,8 +19,8 @@ export class AppComponent {
   productsCollection: AngularFirestoreCollection<[]>;
   products: Observable<[]>;
   productDoc: AngularFirestoreDocument<any>;
-  constructor(db: AngularFirestore) {
 
+  constructor(db: AngularFirestore) {
     var citiesRef = db.collection("cities");
 
     citiesRef.doc("SF").set({
@@ -53,4 +56,6 @@ export class AppComponent {
     })
     console.log(this.items)
   }
+
+
 }

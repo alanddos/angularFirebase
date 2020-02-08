@@ -10,6 +10,9 @@ import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AuthService } from '../app/services/core/auth.service';
+
+
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -80,7 +83,7 @@ import { UserComponent } from './user/user.component'
     MatTreeModule,
     DragDropModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
