@@ -13,7 +13,8 @@
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <mat-drawer></mat-drawer>
-      <div *ngIf="(isHandset$ | async)==false">
+      <div> 
+        <!-- *ngIf="(isHandset$ | async)==false" -->
         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>        

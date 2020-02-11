@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 
 //firebase
 import { AngularFireModule } from '@angular/fire';
@@ -36,11 +36,16 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { LoginComponent } from './login/login.component';
-import { UserComponent } from './user/user.component'
+import { UserComponent } from './user/user.component';
+
+//anuglar pwa
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { UpdateService } from './services/update.service';
 
 
 @NgModule({
@@ -81,9 +86,11 @@ import { UserComponent } from './user/user.component'
     MatPaginatorModule,
     MatSortModule,
     MatTreeModule,
-    DragDropModule
+    DragDropModule,
+    MatSnackBarModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [AuthService],
+  providers: [AuthService, UpdateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
