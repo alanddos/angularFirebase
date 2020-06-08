@@ -47,6 +47,9 @@ import { UserComponent } from './user/user.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { UpdateService } from './services/update.service';
 
+//primneng
+import {PanelMenuModule} from 'primeng/panelmenu';
+
 
 @NgModule({
   declarations: [
@@ -62,6 +65,7 @@ import { UpdateService } from './services/update.service';
     UserComponent
   ],
   imports: [
+    PanelMenuModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
