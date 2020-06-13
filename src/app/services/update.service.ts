@@ -9,7 +9,7 @@ import { SwUpdate } from '@angular/service-worker';
 export class UpdateService {
   constructor(private swUpdate: SwUpdate, private snackbar: MatSnackBar) {
     if (!this.swUpdate.isEnabled) {
-      this.snackbar.open('Serviço de atualização desativado! 🙁');
+      this.snackbar.open('Não é possivel verificar novas atualizações!');
     }
 
     swUpdate.available.subscribe(event => {
@@ -23,7 +23,7 @@ export class UpdateService {
 
     
     this.swUpdate.available.subscribe(evt => {
-      const snack: any = this.snackbar.open('Update Available', 'Reload');
+      const snack: any = this.snackbar.open('Nova Atualização disponível', 'Atualizar!');
 
       snack
         .onAction()

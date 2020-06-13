@@ -1,8 +1,8 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" style="z-index: 1000">
   <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
 
-    <img width="193px" src="assets/images/logopreta.png">
+    <img width="196px" src="assets/images/logopreta.png">
 
     <p-panelMenu [multiple]="false" [model]="items"></p-panelMenu>
 

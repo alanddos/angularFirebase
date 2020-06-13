@@ -33,9 +33,15 @@
               "src/styles.scss",
               "./node_modules/primeicons/primeicons.css",
               "./node_modules/primeng/resources/themes/luna-blue/theme.css",
-              "./node_modules/primeng/resources/primeng.css"
+              "./node_modules/primeng/resources/primeng.css",
+              "node_modules/jarallax/dist/jarallax.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/jarallax/dist/jarallax.min.js",
+              "node_modules/jarallax/dist/jarallax-element.min.js",
+              "node_modules/jarallax/dist/jarallax-video.min.js"
+            ]
           },
           "configurations": {
             "production": {

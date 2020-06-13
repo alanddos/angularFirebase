@@ -1,27 +1,172 @@
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-        <!-- <div *ngIf="card.title == 'Card 1'"><app-drag-drop></app-drag-drop></div>
-        <div *ngIf="card.title == 'Card 2'"><app-table></app-table></div>
-        <div *ngIf="card.title == 'Card 3'"><app-address-form></app-address-form></div>
-        <div *ngIf="card.title == 'Card 4'"><app-tree></app-tree></div> -->
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+<div class="view intro jarallax"
+  style="background-image: linear-gradient(65deg, black 50%, transparent 50%), linear-gradient(-60deg, #7b1fa2 30%, transparent 30%);; background-attachment: fixed; height: calc(100vh - 64px)">
+  <div class="full-bg-img mask rgba-white-light">
+    <div class="container" style="text-align: center;
+    padding-top: 111px;">
+      <div class="d-flex align-items-center d-flex justify-content-center" style="height: 1200px">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <img src="assets/images/logopreta.png">
+              <h2 class="h2 display-1 mb-2 wow fadeInDown textChange" data-wow-delay="0.3s">Criação de Sites e Sistemas
+              </h2>
+              <h4 class="font-up mb-3 mt-1 font-bold wow fadeIn" data-wow-delay="0.4s"><p>A AGILSYSTEM É UMA AGÊNCIA VIRTUAL ESPECIALIZADA EM CRIAÇÃO DE SITES E SISTEMAS. </p>
+                Nossa missão é ajudar pequenas, médias e grandes empresas a alcançarem o sucesso na internet, oferecendo soluções e atendimento de qualidade.</h4>
+            </div>            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+
+<div class="container">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-12 text-center mb-5">
+      <!-- <h2 class="h1 font-bold light-blue-text my-5">AgilSystem Criação de Sites e Sistemas</h2> -->
+      <p align="justify">A AgilSystem É UMA AGÊNCIA DIGITAL ESPECIALIZADA EM CRIAÇÃO DE SITES EM DOURADOS MS.
+        Mas atendemos clientes de todo Brasil e exterior. Nossa missão é ajudar pequenas, médias e grandes empresas a alcançarem o sucesso na internet, oferecendo soluções e atendimento de qualidade</p>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</div>
+
+
+
+<div class="view intro jarallax"
+  style="background-image: url(https://elitemidia.com/wp-content/uploads/2017/07/Background-2.jpg); background-attachment: fixed; background-size: cover; min-height: 700px">
+  <div class="full-bg-img mask rgba-pink-slight">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center" style="height: 700px">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <h2 class="h1 display-1 white-text mb-2 wow fadeInDown" data-wow-delay="0.3s">Welcome on my
+                page!</h2>
+              <h4 class="mb-3 mt-1 white-text font-bold wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                amet</h4>
+              <a mdbBtn color="pink" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s">Read
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-12 text-center mb-5">
+      <h2 class="h1 font-bold light-blue-text my-5">Lorem ipsum dolor sit amet, consectetur quis elit.</h2>
+      <p align="justify">Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque
+        provident
+        rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.</p>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+</div>
+
+
+<div class="view intro jarallax"
+  style="background-image: url(https://wallpapermemory.com/uploads/813/code-background-hd-2560x1440-53050.jpg); background-attachment: fixed; min-height: 700px">
+  <div class="full-bg-img mask rgba-purple-slight">
+    <div class="container">
+      <div class="d-flex align-items-center d-flex justify-content-center" style="height: 700px">
+        <div class="row mt-5">
+          <div class="col-md-12 wow fadeIn mb-3">
+            <div class="intro-info-content text-center">
+              <h2 class="h1 display-1 white-text mb-2 wow fadeInDown" data-wow-delay="0.3s">Welcome on my
+                page!</h2>
+              <h4 class="mb-3 mt-1 white-text font-bold wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                amet</h4>
+              <a mdbBtn color="pink" class="wow fadeIn waves-light" mdbWavesEffect data-wow-delay="0.4s">Read
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-12 text-center my-5">
+      <h2 class="h1 font-bold pink-text mb-5">Lorem ipsum dolor sit amet, consectetur quis elit.</h2>
+      <p align="justify">Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro, cumque
+        provident
+        rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet, veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.Lorem ipsum dolor sit amet, consectetur quis elit. Perspiciatis commodi porro,
+        cumque
+        provident rem corporis odit, ut quas dolores maxime nesciunt possimus quis, soluta velit debitis amet,
+        veritatis
+        cupiditate reprehenderit.</p>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
 </div>

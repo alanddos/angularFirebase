@@ -50,6 +50,9 @@ import { UpdateService } from './services/update.service';
 //primneng
 import {PanelMenuModule} from 'primeng/panelmenu';
 
+import * as $ from 'jquery';
+
+
 
 @NgModule({
   declarations: [

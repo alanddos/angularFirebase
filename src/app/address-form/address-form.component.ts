@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+import { map } from 'rxjs/operators';
+import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 @Component({
   selector: 'app-address-form',
   templateUrl: './address-form.component.html',
@@ -22,6 +23,19 @@ export class AddressFormComponent {
   });
 
   hasUnitNumber = false;
+  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return [
+          { title: 'Card 1', cols: 1, rows: 2 }
+        ];
+      }
+
+      return [
+        { title: 'Card 1', cols: 1, rows: 2 }
+      ];
+    })
+  );
 
   states = [
     {name: 'Alabama', abbreviation: 'AL'},
@@ -85,7 +99,7 @@ export class AddressFormComponent {
     {name: 'Wyoming', abbreviation: 'WY'}
   ];
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private breakpointObserver: BreakpointObserver) {}
 
   onSubmit() {
     alert('Thanks!');

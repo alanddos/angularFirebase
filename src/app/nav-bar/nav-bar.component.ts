@@ -43,24 +43,24 @@ export class NavBarComponent {
               //icon: 'pi pi-fw pi-question',
               items: [
                   {
-                      label: 'Contents',
-                      icon: 'pi pi-pi pi-bars'
+                      label: 'Contratar Serviços',
+                      icon: 'pi pi-pi pi-file'
                   },
                   {
-                      label: 'Search', 
+                      label: 'Pesquisar Serviços', 
                       icon: 'pi pi-pi pi-search', 
                       items: [
                           {
-                              label: 'Text', 
-                              items: [
-                                  {
-                                      label: 'Workspace'
-                                  }
-                              ]
+                              label: 'Serviços Realizados', 
+                            //   items: [
+                            //       {
+                            //           label: 'Workspace'
+                            //       }
+                            //   ]
                           },
                           {
-                              label: 'User',
-                              icon: 'pi pi-fw pi-file',
+                              label: 'Serviços em Andamento',
+                              ///icon: 'pi pi-fw pi-file',
                           }
                   ]}
               ]

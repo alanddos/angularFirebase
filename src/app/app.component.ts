@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 //pwa
 import { UpdateService } from './services/update.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,8 @@ import { UpdateService } from './services/update.service';
   providers: [UpdateService]
 
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'AgilSystem';
-  constructor(private update: UpdateService) {}
+  constructor(private update: UpdateService) { }
+  
 }
