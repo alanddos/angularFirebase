@@ -1,58 +1,46 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
-
-//firebase
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
-import { AngularFireAuthModule } from "@angular/fire/auth";
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AuthService } from '../app/services/core/auth.service';
-
-
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatMenuModule } from '@angular/material/menu';
-import { AddressFormComponent } from './address-form/address-form.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatRadioModule } from '@angular/material/radio';
-import { ReactiveFormsModule } from '@angular/forms';
-import { TableComponent } from './table/table.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { TreeComponent } from './tree/tree.component';
-import { MatTreeModule } from '@angular/material/tree';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { DragDropComponent } from './drag-drop/drag-drop.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
-import { LoginComponent } from './login/login.component';
-import { UserComponent } from './user/user.component';
+import { NavBarComponent } from "./nav-bar/nav-bar.component";
+import { LayoutModule } from "@angular/cdk/layout";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { MatGridListModule } from "@angular/material/grid-list";
+import { MatCardModule } from "@angular/material/card";
+import { MatMenuModule } from "@angular/material/menu";
+import { AddressFormComponent } from "./address-form/address-form.component";
+import { MatInputModule } from "@angular/material/input";
+import { MatSelectModule } from "@angular/material/select";
+import { MatRadioModule } from "@angular/material/radio";
+import { ReactiveFormsModule } from "@angular/forms";
+import { TableComponent } from "./table/table.component";
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatSortModule } from "@angular/material/sort";
+import { TreeComponent } from "./tree/tree.component";
+import { MatTreeModule } from "@angular/material/tree";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { DragDropComponent } from "./drag-drop/drag-drop.component";
+import { DragDropModule } from "@angular/cdk/drag-drop";
+import { NoPageFoundComponent } from "./no-page-found/no-page-found.component";
+import { LoginComponent } from "./login/login.component";
+import { UserComponent } from "./user/user.component";
 
 //anuglar pwa
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { UpdateService } from './services/update.service';
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { UpdateService } from "./services/update.service";
 
 //primneng
-import {PanelMenuModule} from 'primeng/panelmenu';
+import { PanelMenuModule } from "primeng/panelmenu";
 
-import * as $ from 'jquery';
-
-
+import * as $ from "jquery";
 
 @NgModule({
   declarations: [
@@ -65,17 +53,13 @@ import * as $ from 'jquery';
     DragDropComponent,
     NoPageFoundComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
   ],
   imports: [
     PanelMenuModule,
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
     BrowserAnimationsModule,
-    AngularFireAuthModule,
-    AngularFireAnalyticsModule,
-    AngularFirestoreModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -95,9 +79,11 @@ import * as $ from 'jquery';
     MatTreeModule,
     DragDropModule,
     MatSnackBarModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      
+    }),
   ],
-  providers: [AuthService, UpdateService],
-  bootstrap: [AppComponent]
+  providers: [ UpdateService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
