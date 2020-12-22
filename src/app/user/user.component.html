@@ -1,4 +1,4 @@
-<div style="width: 100%; text-align: center;" *ngIf="auth.user | async as user; else showLogin">
+<div style="width: 100%; text-align: center;">
     <div class="row">
         <br />
     </div>
@@ -7,8 +7,8 @@
             <mat-card-header class="headerTop">
                 <mat-card-title>
                     <button [matMenuTriggerFor]="menu" aria-label="Toggle menu" class="botaoPerfil">
-                        <img [src]="user.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" class="user"
-                            style="float: right;">
+                        <!-- <img [src]="user.photoURL || 'https://api.adorable.io/avatars/109/fire.png'" class="user"
+                            style="float: right;"> -->
                     </button>
                     <mat-menu #menu="matMenu" xPosition="before">
                         <button mat-flat-button color="primary" (click)="logout()" style="width: -webkit-fill-available;">Meu Perfil</button>
@@ -17,7 +17,7 @@
                 </mat-card-title>
             </mat-card-header>
             <mat-card-content class="dashboard-card-content">
-                {{ user.displayName }}
+                
             </mat-card-content>
         </mat-card>
     </div>
@@ -25,6 +25,6 @@
 
 <ng-template #showLogin>
     <div style="width: 100%; text-align: center;">
-        <button mat-flat-button color="primary" (click)="login()">Cadastre-se para usar as ferramentas!</button>
+        <button mat-flat-button color="primary" (click)="login()">Login</button>
     </div>
 </ng-template>
